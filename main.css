@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6, p{
 
 .header{
     min-height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/header.jpg") center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("images/header.jpg") center/cover no-repeat;
     color: #fff;
 }
 .top-nav a{
@@ -215,14 +215,13 @@ blockquote span{
     border-color: var(--lightGreen);
 }
 
+/********************* End of Header ***********************/
 
-/*************** End of header ***************/
+/*********************** Main section ********************/
 
-/*************** Main Section ***************/
+/**************** index.html *************/
 
-/*************** index.html ***************/
-
-/*  section one  */
+/* section one */
 .section-one{
     margin: 40px 0;
     min-height: 100vh;
@@ -284,7 +283,8 @@ blockquote span{
     -moz-box-shadow: 0 0 8px #000;
 }
 
-/*  section two  */
+
+/* section two */
 .section-two{
     margin: 40px 0;
 }
@@ -321,18 +321,12 @@ blockquote span{
 .insta-imgs > div:hover .icon-overlay{
     opacity: 1;
 }
-.insta-img-item{
-    width: 350px;
-    height: 300px;
-}
-.insta-img-item img{
-    width: 100%;
-    height: 100%;
-}
 
-/*************** End of index.html ***************/
+/************* end of index.html ***********/
 
-/*************** gallery.html ***************/
+
+
+/**************** gallery.html ***************/
 
 /* section three */
 .section-three{
@@ -357,9 +351,11 @@ blockquote span{
     text-transform: uppercase;
 }
 
-/*************** End of gallery.html ***************/
+/************** end of gallery.html ***********/
 
-/*************** blog.html ***************/
+
+
+/****************** blog.html ****************/
 
 /* section four */
 .section-four{
@@ -384,6 +380,11 @@ blockquote span{
     text-align: center;
     margin-bottom: 8px;
 }
+.misc-info{
+    font-size: 14px;
+    color: var(--dark);
+    margin-top: 16px;
+}
 .blog-title{
     font-size: 20px;
     font-weight: 900;
@@ -392,9 +393,11 @@ blockquote span{
     font-weight: 300;
 }
 
-/*************** End of blog.html ***************/
+/*************** end of blog.html ***********/
 
-/*************** contact.html ***************/
+
+
+/*************** contact.html **************/
 
 /* section five */
 .section-five{
@@ -450,9 +453,11 @@ blockquote span{
     padding: 0 20px;
 }
 
-/*************** End of contact.html ***************/
+/************** end of contact.html **********/
 
-/**************** Footer styling ***************/
+
+
+/******************* Footer Styling *****************/
 
 .footer{
     background: var(--dark);
@@ -512,9 +517,11 @@ blockquote span{
     font-size: 14px;
 }
 
-/*************** End of footer ***************/
+/******************* end of footer ****************/
 
-/*************** Media Queries ***************/
+
+
+/***************** Media Queries *****************/
 
 @media screen and (min-width: 678px){
     /* section five */
@@ -543,7 +550,7 @@ blockquote span{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
     }
-
+    
 }
 
 @media screen and (min-width: 992px){
@@ -603,6 +610,7 @@ blockquote span{
     }
 }
 
+
 @media screen and (min-width: 1000px){
     /* section one */
     .section-one .container{
@@ -633,7 +641,6 @@ blockquote span{
         grid-template-columns: repeat(2, 1fr);
         grid-gap: 20px;
     }
-
 }
 
 @media screen and (min-width: 1200px){
@@ -656,6 +663,8 @@ blockquote span{
         grid-template-columns: repeat(4, 1fr);
     }
 }
+
+/*************** extra small sized screen ******************/
 
 @media screen and (max-width: 500px){
     /* overall styling */
@@ -686,7 +695,7 @@ blockquote span{
         padding-right: 8px;
     }
     h2{
-        font-size: 30px;
+        font-size: 30px!important;
     }
     h3{
         font-size: 20px!important;
@@ -703,6 +712,3 @@ blockquote span{
         grid-row-gap: 20px;
     }
 }
-
-/*************** End of media queries ***************/
-
